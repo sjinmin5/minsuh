@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
     <link rel="stylesheet" type="text/css" href="css/minsuh.css">
+    
 
     <title>minsuh-991647980</title>
     
@@ -61,8 +62,18 @@
             <div class="d">
                 <label for="travelDate">Travel Date:</label>
                 <input type="date" id="travelDate" required />
+                    <script type="text/javascript">
+                        // Disabling previous dates
+                        window.onload = function() {
+                        var today = new Date().toISOString().split('T')[0];
+                        document.getElementById("travelDate").setAttribute('min', today);
+                        }
+                    </script>
+                    
                 <br />
             </div>
+
+            
             
 
 

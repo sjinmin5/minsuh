@@ -23,6 +23,9 @@ footer.innerHTML = `
   </p>
 `;
 
+
+
+
 //increase and decrease # of tickets
 const decrementButton = document.querySelector("#decrement");
 const incrementButton = document.querySelector("#increment");
