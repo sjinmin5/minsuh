@@ -111,6 +111,7 @@ function validateAge() {
   } else {
     ageInput.style.backgroundColor = '';
     document.querySelector('#submitBtn').disabled = false;
+    ageError.textContent = '';
   }
 }
 
