@@ -4,15 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/minsuh.css">
     <title>Second Page</title>
+    
+    
   </head>
   
   <body>
-    <h1 id="transactionMessage">Transaction successful</h1>
-    <h2>Following is the Data from your submission</h2>
-    <div id="formDataDetails"></div>
-      
-    <button id="backButton">Back</button>
+    <header id="header"></header>
+      <h1 id="transactionMessage">Transaction successful</h1>
+      <h2>Following is the Data from your submission</h2>
+      <div id="formDataDetails"></div>
+        
+      <button id="backButton">Back</button>
+      <footer id="footer" class="section"></footer>
+    <script>
+      const fullName = "Suhjin Min";
+      const homeCountry = "South Korea";
+      const loginName = "Suhjin Min";
+      const id = "minsuh";
+      const program = "PCSSN";
+
+      // Header section
+      const header = document.getElementById("header");
+      const headerContent = `
+        <h1 style="font-size: 20px; font-weight: bold;">
+          Summer 2023 Assignment #1 for ${fullName} from ${homeCountry}
+        </h1>
+      `;
+      header.innerHTML = headerContent;
+
+      // Footer section
+      const footer = document.getElementById("footer");
+      footer.innerHTML = `
+        <p>
+          <span style="font-size: 20px; font-weight: bold;">My Login:</span> ${loginName} /
+          <span style="font-size: 20px; font-weight: bold;">My ID:</span> ${id} /
+          <span style="font-size: 20px; font-weight: bold;">My Program:</span> ${program}
+        </p>
+      `;
+    </script>
     <script src="scripts/second-page.js"></script>
     
   </body>
