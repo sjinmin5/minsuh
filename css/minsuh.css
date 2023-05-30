@@ -1,0 +1,199 @@
+
+*{
+    font-family: sans-serif;  
+}
+
+h1{
+
+    text-align: center;
+}
+
+body{
+    
+    color: #4d4d4d;
+}
+
+/* CSS for Desktop View */
+@media only screen and (min-width: 769px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'a a a b b b'
+        'c c d d e e'
+        'f f f f f f'
+        'g g g g-1 g-1 g-1'
+        'h h h-1 h-1 i i'
+        'j j j j j j'
+        ;
+      grid-gap: 10px;
+    }
+  
+    .a {
+        grid-column: 1 / span 3; /* Make f span both columns */
+        margin-bottom: 30px;
+    }
+
+    .b {
+        grid-column: 4 / span 3; /* Make f span both columns */
+        margin-bottom: 30px;
+    }
+    .c {
+        grid-column: 1 / span 2; /* Make f span both columns */
+    }
+    .d {
+        grid-column: 3 / span 2; /* Make f span both columns */
+    }
+    .e {
+        grid-column: 5 / span 2; /* Make f span both columns */
+    }
+
+    .f {
+      grid-column: 1 / span 6; /* Make f span both columns */
+    }
+  
+    .g {
+        grid-column: 1 / span 3; /* Make f span both columns */
+        margin-bottom: 20px;
+    }
+
+    .g-1 {
+        grid-column: 4 / span 3; /* Make f span both columns */
+        margin-bottom: 20px;
+    }
+  
+    .h {
+      grid-column: 1 / span 2; /* Make h span both columns */
+    }
+    .h-1 {
+        grid-column: 3 / span 2; /* Make h span both columns */
+      }
+  
+    .i {
+      grid-column: 5 / span 2; /* Make i span both columns */
+    }
+  
+    .j {
+      grid-column: 1 / span 6; /* Make j span both columns */
+      margin-top: 20px;
+    }
+  
+    
+  }
+  
+  /* CSS for Tablet View */
+  @media only screen and (max-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'a b'
+        'c c'
+        'd d'
+        'e e'
+        'f f'
+        'g g-1'
+        'h h-1'
+        'i i'
+        'j j'
+        ;
+      grid-gap: 10px;
+    }
+    .f {
+        grid-column: 1 / span 2; /* Make i span both columns */
+      }
+    .i {
+        grid-column: 1 / span 2; /* Make i span both columns */
+      }
+    
+    .j {
+        grid-column: 1 / span 2; /* Make j span both columns */
+      }
+    
+  }
+
+  
+/* CSS for Mobile View */
+@media only screen and (max-width: 480px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'g-1'
+        'h'
+        'h-1'
+        'i'
+        'j'
+        ;
+      grid-gap: 10px;
+    }
+  
+    .f {
+      grid-column: 1 / span 1; /* Make f span one column */
+    }
+  
+    .i {
+      grid-column: 1 / span 1; /* Make i span one column */
+    }
+  
+    .j {
+      grid-column: 1 / span 1; /* Make j span one column */
+    }
+  }
+
+#header {
+    background-color: #73aace;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+#footer {
+    background-color: #73aace;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .bus-time-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bus-time-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .bus-time-option.selected {
+    background-color: #73aace;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .active-input {
+    background-color: yellow;
+  }
+
+  #submitBtn{
+
+    display: block;
+    width: 100px;
+    margin: auto;
+
+  }
+
+  footer{
+    margin-top: 10px;
+  }
