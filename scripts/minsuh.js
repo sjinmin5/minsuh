@@ -91,13 +91,12 @@ for (let i = 0; i < busTimeOptions.length; i++) {
 }
 
 //age field
-
 const ageInput = document.querySelector('#age');
 
-// Add event listener to the age input on input change
+// Add event listener to the age input
 ageInput.addEventListener('input', validateAge);
 
-// Function to validate the age input
+// Function to validate the age (if statement: age under 20- can't submit the form)
 function validateAge() {
   const age = parseInt(ageInput.value);
 
@@ -112,7 +111,6 @@ function validateAge() {
 
 
 //Calculation of total amount to be paid
-
 class TicketBooking {
     constructor() {
       this.ticketQuantityInput = document.querySelector('#ticketQuantity');
