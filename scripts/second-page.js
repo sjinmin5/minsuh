@@ -21,4 +21,5 @@ backButton.addEventListener('click', previousPage);
 // Function to navigate back previous page
 function previousPage() {
   window.history.back();
+  window.location.href = 'index.html';
 }

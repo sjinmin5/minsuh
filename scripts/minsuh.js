@@ -152,3 +152,21 @@ function highlightField(event) {
 function removeHighlight(event) {
   event.target.classList.remove('active-input');
 }
+
+// Disable the submit button if all the form is not filled in
+const form = document.getElementById('bookingForm');
+
+submitButton.disabled = true;
+
+// Add event listeners to form input and change events
+form.addEventListener('input', validateForm);
+form.addEventListener('change', validateForm);
+
+// Function to enable the submit button
+function validateForm() {
+  if (form.checkValidity() ) {
+    submitButton.disabled = false; // Enable the submit button
+  } else {
+    submitButton.disabled = true; // Disable the submit button
+  }
+}

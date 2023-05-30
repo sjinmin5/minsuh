@@ -1,5 +1,5 @@
 // Get the form 
-const form = document.getElementById('bookingForm');
+//const form = document.getElementById('bookingForm');
 
 // Add event listener to click the submit button
 submitButton.addEventListener('click', FormSubmit);
