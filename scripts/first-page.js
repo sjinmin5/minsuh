@@ -1,13 +1,13 @@
-// Get the form and submit button elements
+// Get the form 
 const form = document.getElementById('bookingForm');
 
-// Add event listener to the submit button
+// Add event listener to click the submit button
 submitButton.addEventListener('click', FormSubmit);
 
 // Function to handle form submission
 function FormSubmit(event) {
   
-  // Get all the form input values
+  // Get all the input data from form
   const departure = document.getElementById('departure').value;
   const destination = document.getElementById('destination').value;
   const busService = document.querySelector('input[name="busServices"]:checked').value;
@@ -19,7 +19,7 @@ function FormSubmit(event) {
   const gender = document.querySelector('input[name="gender"]:checked').value;
   const age = document.getElementById('age').value;
 
-  // Create an object to store the form data
+  // Create an object to store all the input data from form
   const formData = {
     departure,
     destination,
@@ -33,10 +33,10 @@ function FormSubmit(event) {
     age
   };
 
-  // Save the form data in localStorage
+  // Save all the data to localstorage
   localStorage.setItem('formData', JSON.stringify(formData));
 
-  // Redirect to the second page
+  // Redirect to second-page.html(after submission)
   window.location.href = 'second-page.html';
 }
 
