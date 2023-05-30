@@ -95,6 +95,7 @@ for (let i = 0; i < busTimeOptions.length; i++) {
 
 //age field
 const ageInput = document.querySelector('#age');
+const ageError = document.getElementById('ageError');
 
 // Add event listener to the age input
 ageInput.addEventListener('input', validateAge);
@@ -106,6 +107,7 @@ function validateAge() {
   if (age < 20) {
     ageInput.style.backgroundColor = 'red';
     document.querySelector('#submitBtn').disabled = true;
+    ageError.textContent = 'Age should be at least 20';
   } else {
     ageInput.style.backgroundColor = '';
     document.querySelector('#submitBtn').disabled = false;
