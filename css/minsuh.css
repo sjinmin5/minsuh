@@ -13,6 +13,8 @@ body{
     color: #4d4d4d;
 }
 
+
+
 /* CSS for Desktop View */
 @media only screen and (min-width: 769px) {
     .grid-container {
@@ -112,7 +114,7 @@ body{
 
   
 /* CSS for Mobile View */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 412px) {
     .grid-container {
       display: grid;
       grid-template-areas:
